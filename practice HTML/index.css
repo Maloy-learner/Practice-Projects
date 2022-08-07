@@ -1,0 +1,25 @@
+* {
+	font-family: "Roboto", sans-serif;
+	/*semicolon: delimeter*/
+}
+
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+#landing {
+	color: royalblue;
+	/*background-color: firebrick;*/
+}
+
+.nav-item {
+	font-family: cursive;
+	font-style: oblique;
+}
+
+
