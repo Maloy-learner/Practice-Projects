@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Br131 Portal</title>
+    <link rel="stylesheet" href="exam.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="justice.png">
+      <h1>RTC Br. 131 Records Portal</h1>
+      <nav>
+        <ul>
+          <li><a  href="https://sc.judiciary.gov.ph/">LEGAL RESOURCES</a></li>
+          <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Legal Jurisprudence
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://sc.judiciary.gov.ph/decisions/"> Supreme Court of the Philippines</a>
+          <a class="dropdown-item" href="https://lawphil.net/judjuris/judjuris.html"> The LawPhil Project</a>
+          <a class="dropdown-item" href="https://www.chanrobles.com/scdecisions/">Chan Robles Law Library</a>
+         <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://www.supremecourt.gov/search.aspx?Search=case+law">Foreign Jurisprudence</a></div></li>
+          <li><a  href="https://www.facebook.com/LessInLifeMoreInLaw">Contact Us</a></li> -->
+          <li><a  href="https://business.facebook.com/latest/inbox/all?bpn_id=560214174838591&asset_id=107671077491972&nav_ref=pages_classic_isolated_section_inbox_diode&entry_exp=sodhniwgpb&mailbox_id=&selected_item_id=100009311004830">Contact Us</a></li>
+			  </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+<!--INFO-->
+        <section role="region" aria-labelledby="accused-info">
+          <h2 id="accused-info">Accused's Info</h2>
+          <div class="info">
+            <label for="accused-name">Name:</label>
+            <input type="text" name="accused-name" id="accused-name" />
+          </div>
+          <div class="info">
+            <label for="case-number">Case Number/s:</label>
+            <input type="text" name="case-number" id="case-number" placeholder="TMCR-1234-"/>
+          </div>
+          <div class="info">
+            <label for="date">Date Arrested:<span class="sr-only">(Date of Arrest)</span></label>
+            <input type="date" name="date-arrested" id="date-arrested" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="questions">
+          <h2 id="questions">Please answer the following:</h2>
+<!--Q1-->
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="question-one">
+              <legend>
+                Is the Accused presently detained?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="yes" />
+                    Yes
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="no" />
+                    No
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<!--Q2-->
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="question-two">
+              <legend>
+                Where is the Accused presently detained?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="gen-trias" />
+                    General Trias
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="tanza" />
+                    Tanza
+                  </label>
+                <li>
+                  <label for="q2-a3">
+                    <input type="radio" id="q2-a3" name="q2" value="trece" />
+                    Trece Martires City
+                  </label>
+                  <li>
+                  <label for="q2-a4">
+                    <input type="radio" id="q2-a4" name="q2" value="others" />
+                    Others
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<!--Q3-->
+        <div class="question-block">
+            <p>3</p>
+            <fieldset class="question" name="question-three">
+              <legend>
+                Which law enforcement agency has custody of the Accused?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="q3-a1" name="q3" value="pnp" />
+                    PNP
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="q3-a2" name="q3" value="bjmp" />
+                    BJMP
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a3">
+                    <input type="radio" id="q3-a3" name="q3" value="provincial" />
+                    Cavite Provincial Jail
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a3">
+                    <input type="radio" id="q3-a3" name="q3" value="others" />
+                    Others
+                    <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="50" placeholder="CIDG, NBI, etc..."></textarea>
+            </div>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<!--Q4-->
+        <div class="question-block">
+            <p>4</p>
+            <fieldset class="question" name="question-two">
+              <legend>
+                What document/s do you need?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q4-a1">
+                    <input type="checkbox" id="q4-a1" name="q4" value="copy-information" />
+                    Copy of Information/s
+                  </label>
+                </li>
+                <li>
+                  <label for="q4-a2">
+                    <input type="checkbox" id="q4-a2" name="q4" value="no-pending" />
+                    Certificate of No Pending Case
+                  </label>
+                <li>
+                  <label for="q4-a3">
+                    <input type="checkbox" id="q4-a3" name="q4" value="referral" />
+                    Referral to Probation
+                  </label>
+                  <li>
+                  <label for="q4-a4">
+                    <input type="checkbox" id="q4-a4" name="q4" value="others" />
+                    Others
+                    <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="50" placeholder="Sinumpaang salaysay..."></textarea>
+            </div>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          </section>
+<!--Q5-->
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="additional-questions">Final Question</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Are you a related to the Accused</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            </section>
+
+
+<!--  -->
+           <!--  <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div> -->
+<!--  -->
+          </div>
+        </section>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+  </body>
+</html>
