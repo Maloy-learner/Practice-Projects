@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="practice project" />
     <title>Br131 Portal</title>
-    <link rel="stylesheet" href="exam.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
-      <img id="logo" src="justice.png">
+      <img id="logo" src="images/scales-of-justice-logo.jpg">
       <h1>RTC Br. 131 Records Portal</h1>
       <nav>
         <ul>
-          <li><a  href="https://sc.judiciary.gov.ph/">LEGAL RESOURCE</a></li>
+          <li type="dropdown";><a  href="https://sc.judiciary.gov.ph/">LEGAL RESOURCE</a></li>
           <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
           Legal Jurisprudence
         </a>
         <div class="dropdown-menu">
@@ -24,28 +24,38 @@
           <a class="dropdown-item" href="https://www.chanrobles.com/scdecisions/">Chan Robles Law Library</a>
          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="https://www.supremecourt.gov/search.aspx?Search=case+law">Foreign Jurisprudence</a></div></li>
-          <li><a  href="https://www.facebook.com/LessInLifeMoreInLaw">Contact Us</a></li> -->
+           <li><a  href="https://www.facebook.com/LessInLifeMoreInLaw">Contact Us</a></li> --> 
           <li><a  href="https://business.facebook.com/latest/inbox/all?bpn_id=560214174838591&asset_id=107671077491972&nav_ref=pages_classic_isolated_section_inbox_diode&entry_exp=sodhniwgpb&mailbox_id=&selected_item_id=100009311004830">Contact Us</a></li>
 			  </ul>
       </nav>
     </header>
     <main>
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+<!-- FORM -->
+      <form method="post" action="https://business.facebook.com/latest/inbox/all?asset_id=107671077491972&nav_ref=pages_classic_isolated_section_inbox_redirect&entry_exp=sodhniwgpb">
 <!--INFO-->
         <section role="region" aria-labelledby="accused-info">
           <h2 id="accused-info">Accused's Info</h2>
           <div class="info">
-            <label for="accused-name">Name:</label>
+            <label for="accused-name">Name of Accused:</label>
             <input type="text" name="accused-name" id="accused-name" />
           </div>
           <div class="info">
             <label for="case-number">Case Number/s:</label>
             <input type="text" name="case-number" id="case-number" placeholder="TMCR-1234-"/>
+            <div class="info">
+            <label for="accused-name">Your Name</label>
+            <input type="text" name="accused-name" id="accused-name" />
           </div>
           <div class="info">
+            <label for="contact-info">Your Contact Info:</label>
+            <input type="text" name="contact-info" id="contact-info" placeholder="cellphone number or email" />
+          </div>
+          </div>
+          
+          <!-- <div class="info">
             <label for="date">Date Arrested:<span class="sr-only">(Date of Arrest)</span></label>
             <input type="date" name="date-arrested" id="date-arrested" />
-          </div>
+          </div> -->
         </section>
         <section role="region" aria-labelledby="questions">
           <h2 id="questions">Please answer the following:</h2>
@@ -98,8 +108,17 @@
                   </label>
                   <li>
                   <label for="q2-a4">
-                    <input type="radio" id="q2-a4" name="q2" value="others" />
+                  	<li>
+                  <label for="q3-a3">
+                    <input type="radio" id="q2-a4" name="q2" value="provincial" />
+                    Cavite Provincial Jail
+                  </label>
+                </li>
+                    <input type="radio" id="q2-a5" name="q2" value="others" />
                     Others
+                     <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="3" cols="30" placeholder="CIDG, NBI, etc..."></textarea>
+            </div>
                   </label>
                 </li>
               </ul>
@@ -125,18 +144,18 @@
                     BJMP
                   </label>
                 </li>
-                <li>
+                <!-- <li>
                   <label for="q3-a3">
                     <input type="radio" id="q3-a3" name="q3" value="provincial" />
                     Cavite Provincial Jail
                   </label>
-                </li>
+                </li> -->
                 <li>
                   <label for="q3-a3">
                     <input type="radio" id="q3-a3" name="q3" value="others" />
                     Others
                     <div class="answer">
-              <textarea id="css-questions" name="css-questions" rows="5" cols="50" placeholder="CIDG, NBI, etc..."></textarea>
+              <textarea id="css-questions" name="css-questions" rows="3" cols="30" placeholder="CIDG, NBI, etc..."></textarea>
             </div>
                   </label>
                 </li>
@@ -172,7 +191,7 @@
                     <input type="checkbox" id="q4-a4" name="q4" value="others" />
                     Others
                     <div class="answer">
-              <textarea id="css-questions" name="css-questions" rows="5" cols="50" placeholder="Sinumpaang salaysay..."></textarea>
+              <textarea id="css-questions" name="css-questions" rows="5" cols="50" placeholder="Ex. Sinumpaang salaysay etc..."></textarea>
             </div>
                   </label>
                 </li>
@@ -185,13 +204,17 @@
           <h2 id="additional-questions">Final Question</h2>
           <div class="formrow">
             <div class="question-block">
-              <label for="customer">Are you a related to the Accused</label>
+              <label for="customer">Whar is your relationship to the Accused</label>
             </div>
             <div class="answer">
               <select name="customer" id="customer" required>
                 <option value="">Select an option</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
+                <option value="son">Son</option>
+                <option value="daughter">Daughter</option>
+                <option value="father">Father</option>
+                <option value="mother">Mother</option>
+                <option value="spouse">Spouse</option>
+                <option value="others">Others</option>
               </select>
             </div>
             </section>
