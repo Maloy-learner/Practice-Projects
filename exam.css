@@ -25,7 +25,7 @@ header {
 
 #logo {
   width: max(10px, 10vw);
-  margin-top: 200px;
+  margin-top: 50px;
   object-position: left;
 	/*background-color: transparent;*/
   aspect-ratio: 1 / .5;
