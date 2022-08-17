@@ -1,0 +1,236 @@
+* {
+	font-family: "Roboto", sans-serif;
+	/*semicolon: delimeter*/
+	background-color: transparent;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+p {
+	font-size: 20px;
+}
+
+/*title {
+	color: white;
+}*/
+
+#landing {
+	color: white;
+	font-size: 25px;
+}
+.jumbotron {
+	background-color: transparent;
+}
+
+nav {
+	background-color: lightblue;
+}
+.navbar-nav {
+	padding-bottom: 0px;
+	/*font-size: 25px;*/
+	color: teal;
+}
+
+.nav-link {
+	color: black;
+}
+
+.court-name {
+	color: white;
+	font-size: 200%;
+	text-align: center;
+}
+
+#logo {
+	position: absolute; 
+	top: 0; 
+	left: 10px;
+	top: 125px; 
+	z-index: 80;
+	width: 150px;
+	height: 150px; 
+}
+
+#landing {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*font-weight: 100%;*/
+	
+}
+
+/*#portfolio-nav {
+	text-align: right;
+	margin-bottom: 0px;
+	padding-bottom: 0px;*/
+}
+
+.dropdown-toggle {
+	color: white;
+}
+
+/* Center the content vertically using flexbox */
+#gallery {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 60vh;
+}
+
+/* Removes bullets of the  ul/li */
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* Changes the color and font  of the section headers */
+h3 {
+	color: darkblue;
+	
+}
+
+h2 {
+	color: white;
+	padding: 5px;
+	margin: 0px;
+	text-align: right;
+}
+
+h2, h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding-top: 100px;
+  /*width: 10000px;*/
+  border-width: 50px;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
+/*h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}*/
+
+h3 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin-top: 30px;
+	padding: 0px 15px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.info label, .info input {
+  display: inline-block;
+  text-align: right;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+}
+
+.question-block {
+  text-align: left;
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+p {
+  margin-top: 5px;
+  padding-left: 5px;
+  font-size: 20px;
+  text-underline-position: left;
+  text-decoration: underline;
+}
+
+p::before {
+  content: "Question #";
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+	display: block;
+	margin: 10px auto;
+	width: 10%;
+	padding: 10px;
+	font-size: 23px;
+	background: #d0d0d5;
+	border: 3px solid #3b3b4f;
+}
+
+/*#contact-info {
+	display: block;
+	margin: 10px auto;
+	width: 10%;
+	padding: 10px;
+	font-size: 23px;
+	background: #d0d0d5;
+	border: 3px solid #3b3b4f;*/
+}
+footer {
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+}
+
+footer,
+footer a {
+  font-color: white;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
+.sr-only {
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
