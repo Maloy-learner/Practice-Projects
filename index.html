@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="practice project" />
-    <title>Br131 Portal</title>
-    <link rel="stylesheet" href="exam.css" />
-  </head>
-  <body>
-    <header>
-      <img id="logo" src="justice.png">
-      <h1>RTC Br. 131 Records Portal</h1>
-      <nav>
-        <ul>
-		
-<!--           <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Legal Jurisprudence
-        </a>
-        <div class="dropdown-menu">
-        	<a class="dropdown-item" href="https://sc.judiciary.gov.ph/decisions/"> Supreme Court of the Philippines</a>
-          <a class="dropdown-item" href="https://lawphil.net/judjuris/judjuris.html"> The LawPhil Project</a>
-          <a class="dropdown-item" href="https://www.chanrobles.com/scdecisions/">Chan Robles Law Library</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://www.supremecourt.gov/search.aspx?Search=case+law">Foreign Jurisprudence</a> -->
-           		
-<!--           <li><a  href="https://business.facebook.com/latest/inbox/all?bpn_id=560214174838591&asset_id=107671077491972&nav_ref=pages_classic_isolated_section_inbox_diode&entry_exp=sodhniwgpb&mailbox_id=&selected_item_id=100009311004830">Contact Us</a></li> -->
-			  </ul>
-      </nav>
-	    
-	     <!-- Display current time and date -->
-	  
+<html>
+<head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>RTC | Portal</title>
+
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- Personal CSS -->
+  <link rel="stylesheet" type="text/css" href="page2.css">
+</head>
+<body background="D:\Practice-Projects\exam\page2\images\50-Beautiful-and-Minimalist-Presentation-Backgrounds-036">
+  <!-- Ctrl + / to create comments -->
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-hsl
+ fixed-top">
+    
+     <img id="logo" src="D:\Practice-Projects\exam\page2\images\justice.png" >
+    
+     <!-- Display current time and date -->
 <script type="text/javascript"> 
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
@@ -44,30 +41,73 @@ display_c();
  }
 </script>
 </script>
-
+</head>
 
 <body onload=display_ct();>
 <span id='ct' ></span>
-    </header>
-	  
-	 
-	
+  
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#portfolio-nav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="portfolio-nav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#"><h2 id="court-name">RTC Br. 131 Portal<span class="sr-only">(current)</span></h1></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/LessInLifeMoreInLaw">Our Social Media</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Legal Jurisprudence
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://sc.judiciary.gov.ph/decisions/"> Supreme Court of the Philippines</a>
+          <a class="dropdown-item" href="https://lawphil.net/judjuris/judjuris.html"> The LawPhil Project</a>
+          <a class="dropdown-item" href="https://www.chanrobles.com/scdecisions/">Chan Robles Law Library</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://www.supremecourt.gov/search.aspx?Search=case+law">Foreign Jurisprudence</a>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Contact Us
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item">Email: rtc1tmt131@judiciary.gov.ph</a>
+          <a class="dropdown-item" >Mobile Nos.: 09275510499 / 09507527325</a>
+          
+        </ul>
+    </div>
+  </nav>
+  <!-- wrapper/container for our page -->
+  <!-- <div class="container-fluid">
+    <section class="jumbotron text-center" id="landing"> -->
+     
+      
+    </section>
+
     <main>
 <!-- FORM -->
       <form method="post" action="https://business.facebook.com/latest/inbox/all?asset_id=107671077491972&nav_ref=pages_classic_isolated_section_inbox_redirect&entry_exp=sodhniwgpb">
 <!--INFO-->
         <section role="region" aria-labelledby="accused-info">
-          <h2 id="accused-info">Accused's Info</h2>
+          <h3 id="accused-info">Accused's Info</h3>
           <div class="info">
             <label for="accused-name">Name of Accused:</label>
-            <input type="text" name="accused-name" id="accused-name" />
+            <input type="text" name="accused-name" id="accused-name" placeholder="Juan dela Cruz"/>
           </div>
           <div class="info">
             <label for="case-number">Case Number/s:</label>
             <input type="text" name="case-number" id="case-number" placeholder="TMCR-1234-"/>
             <div class="info">
             <label for="accused-name">Your Name</label>
-            <input type="text" name="accused-name" id="accused-name" />
+            <input type="text" name="name" id="name" />
           </div>
           <div class="info">
             <label for="contact-info">Your Contact Info:</label>
@@ -81,7 +121,7 @@ display_c();
           </div> -->
         </section>
         <section role="region" aria-labelledby="questions">
-          <h2 id="questions">Please answer the following:</h2>
+          <h3 id="questions">Please answer the following:</h3>
 <!--Q1-->
           <div class="question-block">
             <p>1</p>
@@ -131,12 +171,12 @@ display_c();
                   </label>
                   <li>
                   <label for="q2-a4">
-                  	<li>
-                  <label for="q3-a3">
                     <input type="radio" id="q2-a4" name="q2" value="provincial" />
                     Cavite Provincial Jail
                   </label>
                 </li>
+                <li>
+                <label for="q2-a5">
                     <input type="radio" id="q2-a5" name="q2" value="others" />
                     Others
                      <div class="answer">
@@ -224,10 +264,10 @@ display_c();
           </section>
 <!--Q5-->
         <section role="region" aria-labelledby="css-questions">
-          <h2 id="additional-questions">Final Question</h2>
+          <h3 id="additional-questions">Final Question</h3>
           <div class="formrow">
             <div class="question-block">
-              <label for="customer">Whar is your relationship to the Accused</label>
+              <label for="customer">What is your relationship to the Accused</label>
             </div>
             <div class="answer">
               <select name="customer" id="customer" required>
@@ -237,6 +277,7 @@ display_c();
                 <option value="father">Father</option>
                 <option value="mother">Mother</option>
                 <option value="spouse">Spouse</option>
+                <option value="accused">I am the Accused</option>
                 <option value="others">Others</option>
               </select>
             </div>
@@ -261,8 +302,13 @@ display_c();
         <a href="https://business.facebook.com/latest/home?asset_id=107671077491972&bpn_id=560214174838591&nav_ref=pages_classic_isolated_section_inbox_diode">RTC-Branch 131</a><br />
         Trece Martires City<br />
         Cavite<br />
-        Philippines
+        Philippines<br>
       </address>
+      <p></p> coded by RAGNAR
     </footer>
-  </body>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
 </html>
