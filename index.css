@@ -1,7 +1,3 @@
-@media only screen 
-  and (max-width: 480px) { 
-    ...
-} 
 
 * {
 	font-family: "Roboto", sans-serif;
@@ -239,3 +235,10 @@ address {
 	white-space: nowrap;
 	border: 0;
 }
+
+@media only screen 
+  and (max-width: 480px) { 
+body {
+	background-color: lightblue;
+	  }
+} 
